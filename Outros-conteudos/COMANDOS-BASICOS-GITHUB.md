@@ -2,7 +2,7 @@
 
 estudos na nuvem
 
-1° add . ( O PONTO ADD TUDO!) ou ADD "Nome do Arquivo"
+1° add . ( O PONTO ADD TUDO!) ou ADD "Nome do Arquivo" (disclame ou é o . ou Nome do arquivo)
 
 pos add fazer o commit ou embalar
 
@@ -15,3 +15,7 @@ pos add fazer o commit ou embalar
 git pull (puxa os alterações do github)
 
 git status (ver status)
+
+cls (LIMPA O TERMINAL)
+
+![alt text](image.png)
