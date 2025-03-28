@@ -2,7 +2,7 @@
 
 estudos na nuvem
 
-1° add . ( O PONTO ADD TUDO!) ou ADD "Nome do Arquivo" (disclame ou é o . ou Nome do arquivo)
+1° git add . ( O PONTO ADD TUDO!) ou ADD "Nome do Arquivo" (disclame ou é o . ou Nome do arquivo)
 
 pos add fazer o commit ou embalar
 
