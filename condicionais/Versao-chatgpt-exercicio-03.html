@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function solicitarNota(mensagem) {
+        let nota;
+        do {
+          nota = parseFloat(prompt(mensagem));
+          if (nota > 10 || isNaN(nota) || nota < 0) {
+            alert("Digite um número válido entre 0 e 10!");
+          }
+        } while (nota > 10 || isNaN(nota) || nota < 0);
+
+        return nota;
+      }
+
+      let n1 = solicitarNota("Digite nota 1: ");
+      let n2 = solicitarNota("Digite nota 2: ");
+
+      let media = (n1 + n2) / 2;
+
+      if (media > 4 && n1 > 0 && n2 > 0) {
+        alert("APROVADO");
+      } else {
+        alert("REPROVADO");
+      }
+
+      /* O que foi melhorado:
+🔄 Repetição automática: O usuário só pode prosseguir se digitar um número entre 0 e 10.
+
+📛 Tratamento de erro: Se o usuário digitar algo que não é um número (ex: texto ou deixar em branco), o código pede a nota novamente.
+
+📌 Verificação adequada: Garantimos que n1 e n2 sejam números válidos antes de calcular a média.
+*/
+    </script>
+  </body>
+</html>

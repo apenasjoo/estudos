@@ -1,47 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exercicio 02 de condicionais</title>
+  </head>
+  <body>
     <script>
-        let n1 = parseFloat(prompt("Digite a Nota 1: "))
-        let n2 = parseFloat(prompt("Digite a Nota 2: "))
-        let media = (n1 + n2) / 2
+      let n1 = parseFloat(prompt("Digite a Nota 1: "));
+      let n2 = parseFloat(prompt("Digite a Nota 2: "));
 
+      let media = (n1 + n2) / 2;
 
+      if (media > 4 && n1 > 0 && n2 > 0) {
+        //BLOCO VERDADE
+        alert("APROVADO");
+      } else {
+        //BLOCO MENTIRA
+        alert("REPROVADO");
+      }
 
-        if (media > 4 && n1 > 0 && n2 > 0 ){          //BLOCO VERDADE
-            alert("APROVADO")  
-        }
-        else {      //BLOCO MENTIRA
-            alert("REPROVADO")   
-        }
+      // ---------------------------A FORMA QUE EU ACHEI EM BAIXO, FORMA DO PROFESSOR EM CIMA------------------------
 
+      /*    if (media > 4 ){          //BLOCO VERDADE
+                  alert("APROVADO")
+              }
+              if (media < 4 || 0){      //BLOCO MENTIRA
+                  alert("REPROVADO")
+              }
 
-// ---------------------------A FORMA QUE EU ACHEI EM BAIXO, FORMA DO PROFESSOR EM CIMA------------------------
-
-
- /*    if (media > 4 ){          //BLOCO VERDADE
-            alert("APROVADO")  
-        }
-        if (media < 4 || 0){      //BLOCO MENTIRA
-            alert("REPROVADO")   
-        }
-
-        */
-
-
-
-
-
-
-
-
-
-
+              */
     </script>
-</body>
+  </body>
 </html>
