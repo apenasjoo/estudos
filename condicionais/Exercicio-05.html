@@ -3,14 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PARA DIGITAR APENAS NUMEROS POSITIVO, NAO NEGATIVO</title>
+    <title>EXERCICIO 05</title>
   </head>
   <body>
+    <h1>
+      EXERCICIO ISSO NÃO É UM NUMEORO + MUDANÇA DA LOGICA/LIMPEZA DO CODIGO
+    </h1>
     <script>
       let n1 = parseFloat(prompt("Digite a Nota 1: "));
       let n2 = parseFloat(prompt("Digite a Nota 2: "));
 
-      if (n1 <= 10 && n2 <= 10 && n1 >= 0 && n2 >= 0) {
+      //if (isNaN(n1 || n2)) esta errado ele analisando as duas o certo analisar as variavel separada
+
+      if (isNaN(n1) || isNaN(n2)) {
+        alert("Digite apenas um numero");
+      } else if (n1 < 0 || n2 < 0 || n1 > 10 || n2 > 10) {
+        alert("Digite Apenas Numeros entre 0 e 10");
+      } else {
         let media = (n1 + n2) / 2;
         if (media > 4 && n1 > 0 && n2 > 0) {
           //Bloco verdade
@@ -19,24 +28,10 @@
           //bloco mentira
           alert("REPROVADO");
         }
-      } else {
-        alert("Digite Apenas Números entre 10");
       }
-
-      /*if (n1 > 10 || n2 > 10) {
-        alert("Digite apenas Numeros menos que 10!");
-      } else {
-        let media = (n1 + n2) / 2;
-
-        if (media > 4 && n1 > 0 && n2 > 0)
-        {
-          //BLOCO VERDADE
-          alert("APROVADO");
-        } else {
-          //BLOCO MENTIRA
-          alert("REPROVADO");
-        }
-      }*/
+      {
+        alert("FIM DO PROGRAMA");
+      }
     </script>
   </body>
 </html>
