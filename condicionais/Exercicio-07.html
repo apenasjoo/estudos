@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio 01 switch</title>
+  </head>
+  <h1>Desafio 01 switch</h1>
+  <body>
+    <script>
+      let n = true;
+      let tipo = typeof n;
+      switch (tipo) {
+        case "boolean":
+          alert("essa variavel é boolean!");
+          break;
+        case "number":
+          alert("essa variavel é numero!");
+          break;
+        case "string":
+          alert("essa variavel é string!");
+          break;
+        default:
+          alert("tipo desconhecido");
+      }
+    </script>
+  </body>
+</html>
