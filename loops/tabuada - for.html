@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <h1>tabuada</h1>
+  <body>
+    <script>
+      let numero = parseFloat(prompt(" Digite um numero: "));
+      if (!isNaN(numero)) {
+        for (let i = 0; i <= 1000; i++) {
+          document.write(numero + " x " + i + ": " + numero * i + "<br>");
+        }
+        document.write("Saiu do loop");
+      } else {
+        alert("digite apenas numero!");
+      }
+
+      /*      let numero = parseFloat(prompt(" Digite um numero "));
+            if (!isNaN(numero)) {
+              let contador = 0;
+
+              while (contador <= 1000) {
+                document.write(
+                  numero + " x " + contador + ": " + numero * contador + "<br>"
+                );
+                contador++;
+              }
+              document.write("fim de loop");
+            } else {
+              alert("DIgite apenas numeros");
+            }
+
+            // enquanto contador <= 1000
+            // Loop SEMPRE tem que ter uma condição DE SAIDA
+            // SE NÃO BUGA A PORRA TODA*/
+    </script>
+  </body>
+</html>
