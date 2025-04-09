@@ -7,8 +7,38 @@
   </head>
   <body>
     <script>
-      // Jogue um dado e guarde o numero
+      let dado1 = parseInt(Math.random() * 6) + 1;
+      let dado2 = parseInt(Math.random() * 6) + 1;
 
+      let contador = 1;
+      /* while (dado1 !== dado2) {
+         console.log(dado1, dado2);
+         contador++;
+         dado1 = parseInt(math.random()) * 6 + 1;
+         dado2 = parseInt(math.random()) * 6 + 1;
+       }*/
+
+      console.log("------------");
+
+      dado1 = parseInt(Math.random() * 6 + 1);
+      dado2 = parseInt(Math.random() * 6 + 1);
+      contador++;
+
+      do {
+        console.log(dado1, dado2);
+        contador++;
+        dado1 = parseInt(Math.random()) * 6 + 1;
+        dado2 = parseInt(Math.random()) * 6 + 1;
+      } while (dado1 !== dado2);
+
+      console.log(
+        "os Dados foram jogados " +
+          contador +
+          " vezes. E o numero repetido  foi o " +
+          dado1
+      );
+
+      // Jogue um dado e guarde o numero
       // jogue o outro dado e guarde o numero
 
       //crie contador = 0
